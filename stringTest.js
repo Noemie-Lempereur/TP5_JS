@@ -82,9 +82,3 @@ function swapCaseTests(){
         console.log("false");
     }
 }
-
-function main(){
-    swapCaseTests();
-}
-
-main();

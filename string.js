@@ -1,14 +1,14 @@
 function swapCase(s){
     let size=s.length;
     console.log(s);
-    let d;
+    let d="";
     for(let i=0;i<size;i++){
-        if (s[i] == s[i].toLowerCase()){
-            d[i]=s[i].toUpperCase();
+        if (s[i] === s[i].toLowerCase()){
+            d+=(s[i].toUpperCase());
         }
         else{
-            if (s[i] == s[i].toUpperCase()){
-                d[i]=s[i].toLowerCase();
+            if (s[i] === s[i].toUpperCase()){
+                d+=(s[i].toLowerCase());
             }
         }
     }
