@@ -33,3 +33,14 @@ function range(min, max, step) {
     }
     return t1;
 }
+
+function nbOccurences(wordList, word){
+    let w=wordList.split(" ");
+    let o=0;
+    for(let i=0;i<w.length;i++){
+        if(w[i]==word){
+            o++;
+        }
+    }
+    return o;
+}
