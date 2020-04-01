@@ -44,3 +44,15 @@ function nbOccurences(wordList, word){
     }
     return o;
 }
+
+function flatten2D(array){
+    let array2=[];
+    let k=0;
+    for(let j=0;j<array.length;j++){
+        for(let i=0;i<array[j].length;i++){
+            array2[k]=array[j][i];
+            k++;
+        }
+    }
+    return array2;
+}
