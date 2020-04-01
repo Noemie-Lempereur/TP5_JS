@@ -122,3 +122,52 @@ function dechiffrement(s,cle){
     console.log(a);
     return a;
 }
+
+function chiffrementViginere(s){
+    let alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let c;
+    let a=[];
+    let r=[3,1,4]
+    let j=0;
+    for(let i=0;i<s.length;i++){
+        if (s[i]==' '){
+            a[i]=' ';
+            continue;
+        }
+        c=alphabet.indexOf(s[i]);
+        c=(c+r[j])%26;
+        a[i]=alphabet[c];
+        j++;
+        if(j==3){
+            j=0
+        }
+    }
+    console.log(a);
+    return a;
+}
+
+function dechiffrementViginere(s){
+    let alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let size=s.lenght;
+    let c;
+    let a=[];
+    let r=[3,1,4]
+    let j=0;
+    for(let i=0;i<s.length;i++){
+        if (s[i]==' '){
+            a[i]=' ';
+            continue;
+        }
+        c=alphabet.indexOf(s[i]);
+        c=(c-r[j]);
+        c=(c+26)%26
+        console.log(c);
+        a[i]=alphabet[c];
+        j++;
+        if(j==3){
+            j=0
+        }
+    }
+    console.log(a);
+    return a;
+}
