@@ -28,8 +28,9 @@ function Testrange(){
     let t=[];
     let s=range(3, 8, 1)
     for(let i=0;i<t.length;i++){
-        if (t[i]!=s[i]);{
+        if (t[i]!=s[i]){
             console.log("false");
+            return;
         }
     }
     console.log("true");
@@ -46,4 +47,21 @@ function TestnbOccurences(){
     else{
         console.log("false");  
     }
+}
+
+function Testflatten2D(){
+    let t=[1,2,3,4,5,6];
+    let s=flatten2D([[1,2], [3,4], [5,6]]);
+    let r=flatten2D([[1,2], [3,4,5], [6]]);
+    for(let i=0;i<t.length;i++){
+        if (t[i]!=s[i]){
+            console.log("false");
+            return;
+        }
+        if (t[i]!=r[i]){
+            console.log("false");
+            return;
+        }
+    }
+    console.log("true");
 }

@@ -56,3 +56,69 @@ function flatten2D(array){
     }
     return array2;
 }
+
+function exercice6(){
+    array=["Bob", "Julien", "Roger"];
+    for(let i=0;i<array.length;i++){
+            console.log(array[i]);
+    }
+    array.pop();
+    array.push("Nom");
+    for(let i=0;i<array.length;i++){
+        console.log(array[i]);
+    }
+}
+
+function tablemultiplication (){
+    
+    let array=[[10][10]];
+    let a;
+    for(let i=0;i<10;i++){
+        array[i]=[];
+        for(let j=0;j<10;j++){
+            a=i*j;
+            array[i][j]=a;
+        }
+    }
+    for(let i=0;i<10;i++){
+        console.log(array[i]);
+    }
+    
+}
+
+function chiffrement(s,cle){
+    let alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let c;
+    let a=[];
+    for(let i=0;i<s.length;i++){
+        if (s[i]==' '){
+            a[i]=' ';
+            continue;
+        }
+        c=alphabet.indexOf(s[i]);
+        c=(c+cle)%26;
+        a[i]=alphabet[c];
+    }
+    console.log(a);
+    return a;
+}
+
+function dechiffrement(s,cle){
+    let alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let size=s.lenght;
+    let c;
+    let a=[];
+    for(let i=0;i<s.length;i++){
+        if (s[i]==' '){
+            a[i]=' ';
+            continue;
+        }
+        c=alphabet.indexOf(s[i]);
+        c=(c-cle);
+        c=(c+26)%26
+        console.log(c);
+        a[i]=alphabet[c];
+    }
+    console.log(a);
+    return a;
+}

@@ -3,8 +3,9 @@ function main() {
     Testsum2();
     TestlongestWord();
     Testrange();
-    */
-    console.log( flatten2D([[1,2], [3,4], [5,6]])); // [1, 2, 3, 4, 5, 6]
-    console.log( flatten2D([[1,2], [3,4,5], [6]])); // [1, 2, 3, 4, 5, 6]
+    Testflatten2D();*/
+    //exercice6();
+    //tablemultiplication();
+    dechiffrement(chiffrement("ATTAQUEZ ASTERIX",3),3);
 }
 main();
